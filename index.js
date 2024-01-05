@@ -17,6 +17,16 @@ var animdelay=null;
         }
     });
 
+    $(".Start").click(function()
+    {
+        if(!startedflag)
+        {
+            $("#level-title").text("Level " + level);
+            nextSequence();
+            startedflag=true;
+        }
+    });
+
 
 function nextSequence(){
     level++;
